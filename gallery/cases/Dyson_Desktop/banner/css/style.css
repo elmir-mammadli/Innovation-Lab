@@ -1,0 +1,556 @@
+@font-face {
+	font-family: "FontA";
+
+	src: url("../assets/fonts/FuturaBTBk.otf");
+}
+
+
+/* GLOBAL ------------------------------------------------------------------- */
+html {
+	font-size: 16px;
+}
+
+body {
+	background: black;
+
+	font-family: FontA;
+	color: white;
+}
+
+.jp-template-entrance-animation {
+	opacity: 0;
+}
+
+.jp-template-nowrap {
+	white-space: nowrap;
+}
+
+.jp-template-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.jp-template-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+}
+
+.jp-template-h1 {
+	width: 100%;
+	padding: 0 0.3em;
+	margin-bottom: 1em;
+
+	font-size: 2rem;
+	text-align: center;
+}
+
+.jp-template-h2 {
+	width: 100%;
+	padding: 0 0.3rem;
+	margin-bottom: 0.5em;
+
+	font-size: 1.8rem;
+	text-align: center;
+}
+
+.jp-template-h1 img,
+.jp-template-h2 img,
+.jp-template-p img,
+.jp-template-ul img {
+	position: relative;
+	left: 50%;
+
+	display: block;
+	transform: translateX(-50%);
+
+	margin-bottom: 0.1em;
+
+	max-width: 100%;
+}
+
+.jp-template-p {
+	width: 100%;
+	padding: 0 0.3rem;
+
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.jp-template-ul {
+	padding: 0 0.3em;
+	margin-top: 0.7em;
+
+	text-align: left;
+
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.jp-template-smallprint {
+	width: 100%;
+	height: 60%;
+	padding: 0.4em;
+
+	font-family: FontA;
+	font-size: 0.6rem;
+	line-height: 1em;
+	text-align: center;
+
+	overflow-y: auto;
+}
+
+.jp-template-smallprint::after {
+	position: absolute;
+	bottom: 0;
+	right: 17px;
+
+	width: calc(100% - 15px);
+	height: 1em;
+
+	background: black;
+
+	content: "";
+}
+
+.jp-template-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.jp-template-section,
+.jp-template-section > * {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+div.jp-template-video-container {
+	position: absolute;
+
+	width: 100%;
+}
+
+.jp-template-block {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block !important;
+
+	width: 100%;
+	height: 100%;
+}
+
+.jp-template-spacer {
+	position: relative;
+	top: 0;
+
+	width: 100%;
+
+	padding-bottom: 60%;
+	pointer-events: none;
+}
+
+/* CTA ---------------------------------------------------------------------- */
+
+button.jp-template-cta {
+	border: none;
+	padding: 0;
+  padding: 8px 12px;
+  max-width: 160px;
+  width: 100%;
+  font-size: 1em;
+}
+
+.jp-template-cta span {
+	position: relative;
+
+	display: block;
+
+	border: 1px white solid;
+	box-sizing: content-box;
+	height: 1em;
+	padding: 0.4em 1.8em 0.5em 1.8em;
+
+	background: black;
+
+	font-family: FontA;
+	font-size: 1rem;
+	line-height: 1em;
+	color: white;
+
+	white-space: nowrap;
+}
+
+.jp-template-cta img {
+	position: relative;
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+}
+
+.jp-template-cta img:nth-of-type(2) {
+	position: absolute;
+
+	opacity: 0;
+}
+
+.jp-template-cta-img {
+	width: 70%;
+
+	max-width: 130px;
+}
+
+.jp-template-hovereffect-bg {
+	transition: background 0.3s, color 0.3s;
+
+	background-color: black;
+
+	color: white;
+}
+
+.jp-template-hovereffect-bg img {
+	transition: opacity 0.3s;
+}
+
+.jp-template-hovereffect-bg:hover {
+	background-color: white!important;
+
+	color: black;
+}
+
+.jp-template-hovereffect-bg:hover img:nth-of-type(2) {
+	opacity: 1;
+}
+
+/* TOP ---------------------------------------------------------------------- */
+
+#body_top .jp-template-section {
+	position: absolute;
+	top: 0;
+
+	height: 100%;
+}
+
+#body_top div.jp-template-section:only-child {
+	left: 50%;
+
+	transform: translateX(-50%);
+}
+
+#body_top .jp-template-section:nth-of-type(1) {
+	left: 0;
+}
+
+#body_top .jp-template-section:nth-of-type(2) {
+	right: 0;
+}
+
+#body_top .jp-template-section-copy {
+	z-index: 1;
+
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	display: flex;
+
+	width: 55%;
+}
+
+#body_top .jp-template-section-video {
+	z-index: 10;
+
+	transition: width 0.5s;
+}
+
+#body_top .jp-template-logo {
+	width: 20%;
+}
+
+/* SIDES -------------------------------------------------------------------- */
+
+.body_side .jp-carousel {
+	position: absolute;
+}
+
+.body_side .jp-carousel-item {
+	background-position: center;
+	background-size: cover;
+}
+
+.body_side .jp-carousel-arrownav-holder {
+	z-index: 200;
+}
+
+.body_side .jp-carousel-dotnav {
+	width: 10px;
+	height: 10px;
+}
+
+.body_side .jp-template-wrapper {
+	position: absolute;
+	left: 50%;
+
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	display: flex;
+	transform: translateX(-50%);
+
+	min-width: 120px;
+	max-width: 400px;
+}
+
+.body_side .jp-template-section {
+	position: relative;
+
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	display: flex;
+
+	width: 100%;
+}
+
+.body_side .jp-template-section.jp-template-footer {
+	/* justify-content: flex-start; */
+	justify-content: space-between;
+
+	height: 16%;
+	padding: 3% 0 0 0;
+}
+
+.body_side .jp-template-section.jp-template-header {
+	justify-content: flex-end;
+
+	height: 15%;
+}
+
+.body_side .jp-template-video-container {
+	opacity: 0;
+
+	visibility: visible !important;
+}
+
+.body_side .jp-template-logo {
+	width: 40%;
+
+	max-width: 60px;
+}
+
+#body_expanded {
+	background: transparent;
+}
+
+@media (max-width:180px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+
+/* CUSTOM ------------------------------------------------------------------- */
+
+/* body {
+  background:transparent;
+} */
+
+/* .body_side .jp-template-section.jp-template-header, .body_side .jp-template-section.jp-template-footer{
+  background: black;
+  justify-content: center;
+}
+
+#body_top{
+  background:black;
+} */
+
+
+.body_side .jp-template-logo {
+	width: auto;
+
+	max-width: 90%;
+	max-height: 35%;
+}
+
+body {
+	background: rgb(255, 255, 255);
+
+	color: #333333;
+}
+
+h1,
+h2 {
+	font-family: FontA;
+}
+
+.jp-template-section{
+	margin-bottom: auto;
+}
+
+.jp-template-section:first-child, .jp-template-section:last-child{
+	margin-bottom: inherit;
+}
+
+.jp-template-smallprint::after {
+	background: rgba(251, 251, 251, 1);
+}
+
+.jp-template-cta span {
+	padding: 0.6em 2em 0.5em;
+}
+/*
+.jp-template-hovereffect-bg:hover {
+	border: 1px solid #000000;
+
+	background-color: transparent;
+
+	color: black;
+} */
+
+#body_top .jp-template-h1 {
+	margin-bottom: 0.3em;
+
+	font-size: 3rem;
+}
+
+#body_top .jp-template-p {
+	width: 90%;
+
+	font-size: 1.5em;
+}
+
+.jp-template-ul {
+	font-size: 0.9em;
+}
+
+.jp-template-ul li {
+	margin-bottom: 2%;
+}
+
+.jp-template-ul li:before {
+	display: inline-block;
+
+	margin-left: -3%;
+
+	content: "";
+}
+
+.jp-template-product {
+	/* height: 50%; */
+	flex: 1;
+
+	max-height: 50%;
+}
+
+.product-section{
+	height: 42%;
+  align-items: center;
+}
+
+
+#body_right .jp-template-image {
+	justify-content: center;
+	align-items: flex-end;
+
+	display: flex;
+}
+
+#body_right .jp-template-image img {
+	max-width: 90%;
+	max-height: 100%;
+}
+
+.product-right {
+
+	height:100%;
+}
+
+.product-right:first-child {
+	/* position: relative; */
+
+}
+
+.body_side .jp-template-section.jp-template-header {
+	justify-content: center;
+
+	height: 200px;
+}
+
+/* .jp-template-section {
+	margin-bottom: auto;
+} */
+
+/* .jp-template-section:last-child,
+.jp-template-section:first-child {
+	margin-bottom: unset;
+} */
+
+.carousel-element {
+	top: 75%;
+	left: 50%;
+
+	transform: translate(-50%);
+
+	width: 90%;
+
+	text-align: center;
+}
+
+
+.carousel-section {
+	padding-bottom: 10%;
+}
+
+.body_side .jp-carousel-arrownav-holder {
+	visibility: hidden;
+}
+
+.body_side .jp-template-section.jp-template-footer {
+	height: 10%;
+}
+@media(max-width: 245px) {
+  .jp-template-h2 {
+    font-size: 11vw;
+  }
+}
+
+@media(max-width: 150px) {
+	.jp-template-h2 {
+		font-size: 10vw;
+	}
+}
+
+@media(max-width: 200px) {
+	.jp-template-cta span {
+		padding: 0.4em 10vw 0.5em 10vw;
+	}
+  button.jp-template-cta {
+    padding: 6px 8px;
+    max-width: 110px;
+    font-size: .7em;
+  }
+}

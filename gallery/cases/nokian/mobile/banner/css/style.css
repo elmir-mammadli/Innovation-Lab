@@ -1,0 +1,172 @@
+/* ------------------------------------------------
+LEAVE IN PLACE --------------------------------- */
+
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+/* --------------------------------------------- */
+
+@font-face {
+	font-family: "NokianTyresSans-Regular";
+	src: url("../assets/fonts/NokianTyresSans-Regular.eot") format("EmbeddedOpenType"), url("../assets/fonts/NokianTyresSans-Regular.woff") format("woff"), url("../assets/fonts/NokianTyresSans-Regular.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: "NokianTyresSans-Bold";
+	src: url("../assets/fonts/NokianTyresSans-Bold.eot") format("EmbeddedOpenType"), url("../assets/fonts/NokianTyresSans-Bold.woff") format("woff"), url("../assets/fonts/NokianTyresSans-Bold.woff2") format("woff2");
+	font-style: normal;
+	font-weight: bold;
+}
+.main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background: linear-gradient(175.17deg, #000000 28.04%, #03A800 163.16%);
+}
+.main-top	{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.nh1 {
+	font-family: 'NokianTyresSans-Bold', sans-serif;
+	font-size: 10vw;
+	color: #fff;
+	margin-bottom: 1vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	text-transform: uppercase;
+}
+.nh2 {
+	font-family: 'NokianTyresSans-Bold', sans-serif;
+	font-size: 8.5vw;
+	color: #fff;
+	text-transform: uppercase;
+}
+.btn	{
+	font-family: 'NokianTyresSans-Regular', sans-serif;
+	width: 60%;
+	height: 15vw;
+	color: #fff;
+	outline: none;
+	border: 1px solid #fff;
+	background: none;
+	padding: 4.5vw 1vw;
+	border-radius: 30px;
+	font-size: 5vw;
+	text-transform: uppercase;
+	letter-spacing: 0.2px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+}
+.main-bottom {
+	width: 100%;
+	height: 50%;
+	position: relative;
+}
+.oblako {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.koleso {
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	margin: auto;
+	right: 0;
+	width: 100%;
+}
+.logo	{
+	position: absolute;
+	width: 80%;
+	z-index: 999;
+	bottom: 0;
+	overflow: auto;
+	margin: auto;
+	right: 0;
+	left: 0;
+}
+.pulse{
+	animation: heart-pulse 1s  2s infinite ease-out;
+}
+@keyframes heart-pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+/* Footer */
+.footer {
+	background: linear-gradient(175.17deg, #000000 28.04%, #03A800 163.16%);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.left-footer {
+	width: 50%;
+	position: relative;
+}
+.footer-oblako {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+}
+.footer-koleso {
+	position: absolute;
+	width: 50%;
+	bottom: 0;
+	overflow: auto;
+	margin: auto;
+	right: 0;
+	left: 0;
+}
+.right-footer {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.footer-logo {
+	width: 70%;
+	margin: auto;
+}
+.footer-btn	{
+	font-family: 'NokianTyresSans-Regular', sans-serif;
+	width: 70%;
+	height: 8vw;
+	color: #fff;
+	outline: none;
+	border: 1px solid #fff;
+	background: none;
+	padding: 2vw 1vw;
+	border-radius: 20px;
+	font-size: 3vw;
+	letter-spacing: 0.2px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+}

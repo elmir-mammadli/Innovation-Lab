@@ -1,0 +1,116 @@
+/* ------------------------------------------------
+ LEAVE IN PLACE --------------------------------- */
+ body {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+/* --------------------------------------------- */
+
+body{
+}
+
+@font-face {
+  font-family: "Samsung200";
+  src: url("../assets/fonts/SamsungOneCyrillic-200C_v1.0.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Samsung-Bold";
+  src: url("../assets/fonts/SamsungSharpSans-Bold.otf") format("opentype");
+  font-style: normal;
+}
+.main {
+	width: 100%;
+	height: 100%;
+	background-position: 40%;
+	background-image: url(../assets/mob-fon.jpg);
+	background-size: cover;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+}
+.top-logo {
+	width: 30%;
+	position: absolute;
+	top: 0;
+}
+.h1 {
+	font-family: 'Samsung-Bold', sans-serif;
+	font-size: 6vw;
+	text-align: center;
+	color: #fff;
+	line-height: 1.2;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+	letter-spacing: 0.5px;
+}
+.btn	{
+	width: 50%;
+	height: 10vw;
+	color: #fff;
+	outline: none;
+	border: 1px solid #fff;
+	background: none;
+	font-family: 'Samsung200', sans-serif;
+	padding: 2vw 1vw;
+	border-radius: 10px;
+	font-size: 5vw;
+	letter-spacing: 0.2px;
+	text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4vw;
+  margin-bottom: 6vw;
+}
+.diskleimer {
+	font-family: 'Samsung200', sans-serif;
+	font-size: 3vw;
+	padding: 1vh 2vw;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 2vw;
+}
+/* Bottom */
+.bottom {
+	width: 100%;
+	height: 100%;
+	background-color: #006007;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+}
+.h-bottom {
+	font-family: 'Samsung-Bold', sans-serif;
+	font-size: 6vw;
+	text-align: center;
+	color: #fff;
+	margin-top: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+.btn-bottom	{
+	width: 40%;
+	height: 8vw;
+	color: #fff;
+	outline: none;
+	border: 1px solid #fff;
+	background: none;
+	font-family: 'Samsung200', sans-serif;
+	padding: 1.2vw 1vw;
+	border-radius: 10px;
+	font-size: 4vw;
+	letter-spacing: 0.2px;
+	text-align: center;
+  margin: auto;
+}

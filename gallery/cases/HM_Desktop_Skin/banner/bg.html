@@ -1,0 +1,25 @@
+<!-- justpremium_format_template v1.1.4 2020-10-30 -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="//cdn.justpremium.com/Justpremium/boilerplate/css/premium_2.0.css">
+        <link rel="stylesheet" href="css/style.css?v=b">
+    </head>
+    <body id="body_back">
+        <!-- START OF CUSTOM HTML -->
+
+
+
+        <!-- END OF CUSTOM HTML -->
+        <script src="js/main.js"></script>
+        <!-- <script src="//cdn.justpremium.com/Justpremium/boilerplate/js/jp-controls_0.5.0.js"></script> -->
+        <script src="//cdn.justpremium.com/Justpremium/boilerplate/lib/gsap_3.0.1.js"></script>
+        <!-- <script src="//cdn.justpremium.com/Justpremium/boilerplate/lib/TweenMax_2.0.1.js"></script> -->
+        <script>Premium.template=Premium.template||{},Premium.template.getEntranceAnimations=function(e,t){var a=document.querySelectorAll(".jpt-entrance-animation"),o={opacity:0},c=.5,i=a.length;switch(Premium.product.id()){case"wp":switch(document.body.id){case"body_top":o.y=-40,c=1;break;case"body_left":o.x=-100;break;case"body_right":o.x=100}break;case"cf":case"ca":o.y=40;break;case"is":case"mt":switch(o={opacity:0,y:100},document.body.id){case"body_top":case"body_bottom":o.y=0,o.x=-50,c=1.5}}c=void 0===e?c:e;for(var r=gsap.timeline({paused:!0,defaults:{ease:"back.out"},onComplete:t}),m=0;m<a.length;m++){var s=a[m].getAttribute("data-jp-template")?JSON.parse(a[m].getAttribute("data-jp-template")):o;r.set(a[m],s)}return r.to(a,{delay:c,duration:.6,stagger:.6/i,opacity:1,x:0,y:0}),r}</script>
+        <script src="//cdn.justpremium.com/Justpremium/boilerplate/js/premium_2.4.0.js"></script>
+    </body>
+
+</html>

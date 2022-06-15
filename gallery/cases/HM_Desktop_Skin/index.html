@@ -1,0 +1,183 @@
+﻿<!--
+ justpremium_dev_environment v3.2.0 2020-11-17
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Skin Template</title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 0;
+            height: 100%;
+            font-family: sans-serif;
+            overflow-x: hidden
+        }
+
+        iframe {
+            border: 0
+        }
+
+        #controls {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 500px;
+            background: rgba(0,0,0,.6);
+            padding: 6px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+            #controls #slider-holder {
+                display: flex;
+                flex-basis: 80%;
+                justify-content: space-between
+            }
+
+                #controls #slider-holder #top-size {
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 22px;
+                    text-align: center;
+                    margin: 0;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    flex-basis: 30%;
+                    white-space: nowrap
+                }
+
+                    #controls #slider-holder #top-size span {
+                        opacity: .7
+                    }
+
+                #controls #slider-holder #width-slider {
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    flex-basis: 55%
+                }
+
+            #controls #push-down-button {
+                flex-basis: 22%;
+                margin-left: 3%;
+                cursor: pointer;
+                display: none
+            }
+
+            #controls #reset-width {
+                flex-basis: 22%;
+                margin-left: 3%
+            }
+
+        #resizable_center {
+            width: 1000px;
+            overflow: auto;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%)
+        }
+
+        #resizable_center {
+            width: 1000px;
+            overflow: auto;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%)
+        }
+
+        #iframe_creative_back {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            left: 0;
+            top: 0
+        }
+
+        #iframe_creative_left {
+            height: 100%;
+            min-width: 20px;
+            position: fixed;
+            left: 0;
+            top: 0
+        }
+
+        #iframe_creative_right {
+            height: 100%;
+            min-width: 20px;
+            position: fixed;
+            right: 0;
+            top: 0
+        }
+
+        #iframe_creative_top {
+            width: 100%;
+            height: 0;
+            
+        }
+
+        #iframe_creative_center {
+            width: 100%;
+            height: 0;
+            position: absolute;
+            display: block
+        }
+
+        #website {
+            width: 100%;
+            height: 1800px;
+            overflow: hidden;
+            z-index: 10;
+            position: relative;
+            transition: margin-top 2s
+        }
+        .jp-body-expand {
+          margin-top: 625.4375px !important;
+        }
+        .jp-wp-layer-top-expanded{
+          height:575.5px !important;
+        }
+        #info-display {
+            position: fixed;
+            z-index: 200;
+            font-size: 13px;
+            background: rgba(0,0,0,.6);
+            white-space: nowrap;
+            cursor: grab
+        }
+
+            #info-display div {
+                display: inline-block;
+                margin: 5px 0 5px 10px;
+                text-align: left;
+                padding: 2px;
+                border-radius: 2px
+            }
+
+                #info-display div:nth-last-of-type(1) {
+                    margin-right: 10px
+                }
+
+                #info-display div > * {
+                    margin: 0;
+                    user-select: none;
+                    color: #fff
+                }
+
+        #info-checkbox {
+            margin-left: 5%;
+        }
+
+        </style>
+</head>
+<body jpx-id="wp">
+    <iframe id="iframe_creative_back" class="creative-panel" src="banner/bg.html"></iframe><iframe id="iframe_creative_left" class="creative-panel" src="banner/left.html"></iframe><div id="resizable_center"><iframe id="iframe_creative_top" class="creative-panel" src="banner/top.html"></iframe><iframe id="iframe_creative_center" class="creative-panel" src="banner/center.html"></iframe><iframe id="website" src="http://lab.justpremium.com/demosite/noscroll/?v=0.1"></iframe></div><iframe id="iframe_creative_right" class="creative-panel" src="banner/right.html"></iframe><div id="controls"><div id="slider-holder"><p id="top-size">Top: 1000 x 0</p><input id="width-slider" type="range" min="760" max="1280" value="1000" step="10"></div><input type="button" id="reset-width" value="Reset"> <input type="button" id="push-down-button" value="Push Down"> <input type="checkbox" id="info-checkbox" name="" checked="checked"></div>
+    <script src="//cdn.justpremium.com/Justpremium/boilerplate/lib/gsap_3.0.1.js"></script>
+    <script>!function () { var o, i, d, a, s, c, e, t = document.getElementById("iframe_creative_left"), n = document.getElementById("iframe_creative_right"), l = document.getElementById("iframe_creative_top"), r = document.getElementById("iframe_creative_center"), m = document.getElementById("website"), u = document.getElementById("resizable_center"), p = document.getElementById("width-slider"), v = document.getElementById("push-down-button"), h = document.getElementById("top-size"), w = (document.getElementById("controls"), document.getElementById("reset-width")), f = new XMLHttpRequest, g = !1; function y() { e && o && m.contentWindow.postMessage({ format: o.format, version: "3.2.0" }, "*") } function _() { a = o.sizes.topWidth, s = o.sizes.topHeight, i = a / s, E(), p.value = a } function E() { var e = ((document.documentElement.clientWidth || document.body.clientWidth) - a) / 2; s = Math.ceil(a / i), c = Math.ceil(a / d), t.style.width = n.style.width = e + "px", l.style.height = s + "px", r && (r.style.height = c + "px"), u.style.width = a + "px", h.innerHTML = "<span>Top: </span>" + a + "<span> x </span>" + s, "localStorage" in window && (localStorage.setItem("jp_template_width", a), localStorage.setItem("jp_template_height", s), localStorage.setItem("jp_template_timestamp", Date.now())), m.contentWindow.postMessage({ sideWidth: e }, "*"), jp_dev_environment_updateInfo() } TweenLite.defaultEase = Power1.easeInOut, f.overrideMimeType("application/json"), f.open("GET", "banner/config.json", !0), f.onreadystatechange = function () { if (4 == f.readyState && "200" == f.status) { if (o = JSON.parse(f.responseText), y(), s = o.sizes.topHeight, "localStorage" in window) { var e = localStorage.getItem("jp_template_timestamp"); if (e && "undefined" !== e && "null" !== e && 3e5 < Date.now() - e) a = o.sizes.topWidth, s = o.sizes.topHeight; else { var t = localStorage.getItem("jp_template_width"), n = localStorage.getItem("jp_template_height"); a = t && "undefined" !== t && "null" !== t ? localStorage.getItem("jp_template_width") : o.sizes.topWidth, s = n && "undefined" !== n && "null" !== n ? localStorage.getItem("jp_template_height") : o.sizes.topHeight } } else a = o.sizes.topWidth, s = o.sizes.topHeight; (c = o.sizes.centerHeight) && r && (v.style.display = "block"), p.value = a, i = a / s, d = a / c, window.addEventListener("resize", function () { E() }), h.addEventListener("dblclick", _), w.addEventListener("click", _), requestAnimationFrame(function () { E() }) } }, f.send(null), m.addEventListener("load", function () { e = !0, y() }); var I = function () { window.requestAnimationFrame(function () { a = p.value, E() }) }; function L() { m.style.marginTop = 0, v.value = "Push Down", W("pushUp") } function x() { m.style.marginTop = c + "px", v.value = "Push Up", W("pushDown") } function W(e) { for (var t = document.getElementsByTagName("IFRAME"), n = 0; n < t.length; n++) { var o; "function" == typeof Event ? o = new Event(e) : (o = document.createEvent("Event")).initEvent(e, !0, !1); try { t[n].contentWindow.Premium.jpxApi.dispatchEvent(o) } catch (e) { } } } p.addEventListener("mousedown", function () { I(), p.addEventListener("mousemove", I) }), p.addEventListener("mouseup", function () { p.removeEventListener("mousemove", I) }), v.addEventListener("click", function () { g ? L() : x(), g = !g }), l.addEventListener("load", function () { l.contentWindow.addEventListener("resize", jp_dev_environment_updateInfo) }), window.jpxApiInterface = { pushUp: L, pushDown: x } }(), function () { var e = document.querySelector("#info-checkbox"), n = document.createElement("DIV"), o = !0; n.id = "info-display", document.body.appendChild(n); var i = document.querySelectorAll(".creative-panel"), t = { x: 0, y: 0 }, d = { x: 0, y: 0 }; function a(e) { n.style.left = t.x + (e.clientX - d.x) + "px", n.style.bottom = t.y + (d.y - e.clientY) + "px" } function s() { window.removeEventListener("mousemove", a), window.removeEventListener("mouseup", s) } window.jp_dev_environment_updateInfo = function () { for (var e = "", t = 0; t < i.length; t++) { if (!i[t].contentWindow.document.body) return void setTimeout(function () { jp_dev_environment_updateInfo() }, 20); e += "<div><h3>" + (i[t].contentWindow.document.body && i[t].contentWindow.document.body.id ? i[t].contentWindow.document.body.id : "") + "</h3><p>width: " + i[t].contentWindow.innerWidth + "px</p><p>height: " + i[t].contentWindow.innerHeight + "px</p></div>" } n.innerHTML = e, o && (o = !1, n.style.left = .5 * window.innerWidth - n.clientWidth / 2 + "px", n.style.bottom = "50px") }, n.addEventListener("mousedown", function (e) { t.x = parseInt(n.style.left), t.y = parseInt(n.style.bottom), d.x = e.clientX, d.y = e.clientY, window.addEventListener("mousemove", a), window.addEventListener("mouseup", s) }), e.addEventListener("change", function (e) { n.style.display = e.target.checked ? "block" : "none" }), window.addEventListener("resize", jp_dev_environment_updateInfo), window.addEventListener("load", jp_dev_environment_updateInfo) }()</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* ------------------------------------------------
+ LEAVE IN PLACE --------------------------------- */
+ body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+/* --------------------------------------------- */
+@font-face {
+ font-family: 'Huawei';
+ src:  url('../assets/HuaweiFont-Light.ttf');
+ font-weight: 300;
+}
+@font-face {
+ font-family: 'Huawei';
+ src:  url('../assets/HuaweiFont-Regular.ttf');
+ font-weight: normal;
+}
+@font-face {
+ font-family: 'Huawei';
+ src:  url('../assets/HuaweiFont-Bold.ttf');
+ font-weight: bold;
+}
+body {
+ font-family: 'Huawei';
+ font-weight: normal;
+ font-size: 16px;
+ line-height: 1.2;
+ color: #000;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: #858585;
+  background-image: url('../assets/side.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+.main-banner {
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
+   height: 40%;
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+}
+.main--title {
+   width: 100%;
+}
+.main--description {
+   font-size: 3.55vw;
+   font-weight: 300;
+   line-height: 3;
+}
+.main--btn {
+   font-size: 6vw;
+   padding: 0 6vw;
+   margin-right: auto;
+   border-radius: 1vw;
+}
+.main--disk {
+   position: absolute;
+   bottom: 1vw;
+   left: 0;
+   width: 100%;
+   text-align: center;
+   font-size: 2.4vw;
+}
+/* Bottom */
+.bottom {
+   width: 100%;
+   height: 100%;
+   background-color: #858585;
+   background-image: url('../assets/bottom.jpg');
+   background-repeat: no-repeat;
+   background-position: bottom left;
+   background-size: auto 100%;
+   display: flex;
+}
+.bottom-banner {
+   margin-left: auto;
+   width: 60%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.bottom--title {
+   width: 90%;
+   margin-right: auto;
+}
+.bottom--description {
+   font-weight: 300;
+   font-size: 2.4vw;
+   line-height: 3;
+}
+.bottom--btn {
+   padding: 0 4vw;
+   font-size: 4vw;
+   margin-right: auto;
+   border-radius: 1vw;
+}
+
+.btn {
+  line-height: 1.6;
+  font-weight: bold;
+  background-color: #c1d567;
+}
+.disk b {
+   font-weight: bold;
+}

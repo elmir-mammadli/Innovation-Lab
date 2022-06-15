@@ -1,0 +1,12 @@
+{
+	"clickurl": "http://www.example.com",
+	"format": "Mobile Skin",
+	"devicesimulator" : "no",
+	"infopanel":"yes",
+
+	"size": {
+		"unit":"percent",
+		"main":100,
+		"bottom":15
+	}
+}

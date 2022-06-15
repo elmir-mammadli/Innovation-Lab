@@ -1,0 +1,303 @@
+@font-face {
+  font-family: 'ClanCompPro';
+  src:url('../assets/fonts/ClanCompPro-News.ttf') format('truetype');
+  font-weight:normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ClanCompPro';
+  src:url('../assets/fonts/HelveticaNeueCyr-Black.otf') format('opentype');
+  font-weight: bold;
+  font-display: swap;
+}
+
+body{
+  font-family: 'ClanCompPro';
+  font-size: 14px;
+  line-height: 1.2;
+  background: #fff200;
+  color:#000;
+}
+
+.karcher{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.karcher--top{
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.karcher--top__left{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+  flex:50% 0 0;
+}
+
+.karcher__text{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.karcher__text--top{
+  height: 100%;
+  justify-content: space-around;
+}
+
+.karcher__text h1{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 5px;
+}
+
+.karcher__text p{
+  font-size: 22px;
+}
+
+.karcher__prices{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.karcher__price{
+  object-fit: contain;
+}
+
+.karcher__price--old{
+  max-width: 110px;
+  width: 85%;
+  margin-left: 7.5%;
+}
+
+.karcher__price--new{
+  max-width: 130px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.karcher__product{
+  transition: .8s;
+  object-fit: contain;
+}
+
+.karcher__product--top{
+  height: 95%;
+  object-fit: contain;
+  animation: scale 2s ease 1s forwards;
+  transform: scale(.8);
+}
+
+
+@keyframes scale{
+  from {
+    transform: scale(.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.karcher__product--side{
+  transform: scale(.8);
+  height: 42%;
+  width: 95%;
+  object-fit: contain;
+  position: relative;
+  top: 16.5%;
+}
+
+.karcher__product--side.active{
+  transform: scale(1);
+}
+
+.karcher__logo{
+  max-width: 180px;
+  width: 90%;
+  object-fit: contain;
+  filter: brightness(0);
+  position: absolute;
+  top: 15px;
+}
+
+.karcher--side{
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 90px 5% 50px 5%;
+}
+
+.karcher__text--side{
+  align-items: center;
+  position: relative;
+  top: 5.5%;
+}
+
+.karcher__text--side h1{
+  font-size: 9vw;
+}
+
+.karcher__text--side p{
+  font-size: 7vw;
+}
+
+.karcher--side .karcher__prices{
+  margin-top: 1.5vh;
+}
+
+.karcher__de{
+  position: absolute;
+  bottom: 5px;
+  right: 5%;
+  width: 47px;
+}
+
+.karcher__cta{
+  font-family: 'Arial';
+  margin-top: 2vh;
+  padding:10px 20px;
+  background: #000;
+  color:#fff;
+  font-size:20px;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+
+.karcher--side .karcher__price--old{
+  margin-left: 10%;
+  width: 70%;
+}
+
+.fade_top{
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: .6s;
+}
+
+.fade_left{
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: .6s;
+}
+
+.fade_right{
+  opacity: 0;
+  transform: translateX(100px);
+  transition: .6s;
+}
+
+.fade_bottom{
+  opacity: 0;
+  transform: translateY(80px);
+  transition: .6s;
+}
+
+.faded{
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: .6s !important;
+}
+
+.pulse{
+  -webkit-animation: heart-pulse 1.5s infinite ease-out;
+          animation: heart-pulse 1.5s infinite ease-out;
+}
+
+@-webkit-keyframes heart-pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes heart-pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+#body_top .jpt-video-container{
+  flex:44.7% 0 0;
+  height: 100% !important;
+}
+
+#body_right .jpt-video-container{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  opacity: 0;
+}
+
+@media screen and (min-width:380px){
+  .karcher__text--side h1{
+    font-size: 34px;
+  }
+
+  .karcher__text--side p{
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-height:740px){
+  .karcher__product--side{
+    height: 40%;
+    top: 15%;
+  }
+  .karcher__text--side{
+    top: 7%;
+  }
+  .karcher--side .karcher__prices{
+    margin-top: 1vh;
+  }
+  .karcher__cta{
+    margin-top: 1.5vh;
+  }
+  #body_right .jpt-video-container{
+    max-width: 306px;
+  }
+}

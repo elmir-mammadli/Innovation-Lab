@@ -1,0 +1,432 @@
+body {
+  background: #000000;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 100;
+}
+.background_horizontal {
+  position: relative;
+  width: 106%;
+  height: auto;
+}
+.gradient {
+  background: -o-linear-gradient(310deg, rgba(0 0 0 / 65%) 22%, rgba(0 0 0 / 40%) 46%, rgba(0 0 0 / 0) 60%, rgba(0 0 0 / 0) 70%, rgba(0 0 0 / 0%) 100%);
+  background: linear-gradient(140deg, rgba(0 0 0 / 65%) 22%, rgba(0 0 0 / 40%) 46%, rgba(0 0 0 / 0) 60%, rgba(0 0 0 / 0) 70%, rgba(0 0 0 / 0%) 100%);
+}
+.gradient2 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgb(43 29 21)), color-stop(40%, rgba(0 0 0 / 40%)), color-stop(60%, rgba(0 0 0 / 0)), color-stop(68%, rgba(0 0 0 / 23%)), color-stop(79%, rgb(32 22 21)));
+  background: -o-linear-gradient(top, rgb(43 29 21) 20%, rgba(0 0 0 / 40%) 40%, rgba(0 0 0 / 0) 60%, rgba(0 0 0 / 23%) 68%, rgb(32 22 21) 79%);
+  background: linear-gradient(180deg, rgb(43 29 21) 20%, rgba(0 0 0 / 40%) 40%, rgba(0 0 0 / 0) 60%, rgba(0 0 0 / 23%) 68%, rgb(32 22 21) 79%);
+}
+.block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  z-index: 100;
+}
+.box_50{
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.box_50_2 {
+  position: absolute;
+  top: 10%;
+  width: 50%;
+  height: auto;
+  z-index: 200;
+  right: -10%;
+}
+.box_50_2 .icon {
+  position: absolute;
+  margin-top: 0;
+  height: auto;
+}
+.box_50__left {
+  margin-left: -10%;
+}
+.logo{
+  position: absolute;
+  top: 7%;
+  left: 15%;
+  width: 18%;
+  height: auto;
+  opacity: 0;
+}
+.logo_natural{
+  display: block;
+  position: relative;
+  width: 37%;
+  height: auto;
+  opacity: 0;
+}
+#body_top .logo_natural{
+  left: 31%;
+  top: 11%;
+}
+.h1{
+  display: block;
+  position: relative;
+  width: 56%;
+  height: auto;
+  margin-top: 25%;
+  opacity: 0;
+}
+.pack_crips{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: auto;
+  opacity: 0;
+}
+.pack_crips__root{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* transform: scale(0.8); */
+}
+.pack_crips_1{
+  -webkit-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.pack_crips_2{
+  -webkit-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.pack_crips_3{
+  -webkit-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.background_vertical_2{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 150%;
+  width: auto;
+  opacity: 0.2;
+}
+.background_vertical{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.vertical {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box_25{
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 25%;
+  position: fixed;
+  z-index: 150;
+}
+.box_25__up{
+  top: 0;
+  left: 0;
+}
+.box_25__down{
+  bottom: 0;
+  right: 0;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -15%;
+}
+.icon__img {
+  position: relative;
+  width: 20%;
+  height: auto;
+  margin-right: 5%;
+  opacity: 0;
+}
+.icon__text{
+  position: relative;
+  width: 61%;
+  height: auto;
+  left: 0%;
+  opacity: 0;
+}
+.icon__text_2{
+  position: relative;
+  width: 40%;
+  height: auto;
+  left: 0%;
+  opacity: 0;
+}
+.icon__signature_1,
+.icon__signature_2 {
+  position: fixed;
+  width: 85%;
+  height: auto;
+  right: 5%;
+  bottom: 2%;
+  opacity: 0;
+}
+.icon__signature_2{
+  width: 71%;
+  opacity: 0;
+}
+.icon__signature_3 {
+  position: absolute;
+  width: 5%;
+  height: auto;
+  right: 1.5%;
+  bottom: 3%;
+  opacity: 0;
+  z-index: 150;
+}
+.icon__signature_4 {
+  position: absolute;
+  width: 85%;
+  top: 80%;
+  height: auto;
+  right: 13%;
+  opacity: 1;
+  z-index: 250;
+}
+.skillet {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 150;
+}
+.pack {
+  position: absolute;
+  left: 5%;
+  top: 7%;
+  width: 90%;
+  height: auto;
+  z-index: 150;
+}
+.sheet {
+  position: absolute;
+  left: 17%;
+  bottom: 25%;
+  width: 11%;
+  height: auto;
+  z-index: 150;
+  opacity: 0;
+}
+.sheet2 {
+  position: absolute;
+  right: 9%;
+  top: 37%;
+  width: 11%;
+  height: auto;
+  z-index: 150;
+  -webkit-transform: rotate(40deg);
+      -ms-transform: rotate(40deg);
+          transform: rotate(40deg);
+  opacity: 0;
+}
+.crisps {
+  position: absolute;
+  right: -5%;
+  top: 44%;
+  width: 17%;
+  height: auto;
+  z-index: 150;
+  opacity: 0;
+}
+.crisps2{
+  position: absolute;
+  left: -1%;
+  bottom: 27%;
+  width: 30%;
+  height: auto;
+  z-index: 150;
+  opacity: 0;
+}
+.background_vertical_hide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 149;
+  opacity: 1;
+}
+.vertical_height {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+#body_left .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#body_left .logo_natural,
+#body_right .logo_natural {
+  position: relative;
+  width: 60%;
+  margin: 10% auto 0;
+  max-width: 350px;
+}
+#body_left .h1,
+#body_right .h1
+{
+  position: relative;
+  width: 84%;
+  height: auto;
+  margin: 7.5% auto 0;
+  max-width: 350px;
+}
+#body_right .h1
+{
+  width: 70%;
+}
+
+@media (min-width: 100px) and (min-height: 650px) {
+  .vertical {
+    -webkit-transform: scale(1.75);
+        -ms-transform: scale(1.75);
+            transform: scale(1.75);
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  .icon__signature_4 {
+    top: 72%;
+  }
+}
+
+@media (min-width: 150px) and (min-height: 650px) {
+  .vertical {
+    -webkit-transform: scale(1.6);
+        -ms-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+}
+@media (min-width: 175px) and (min-height: 650px) {
+  .vertical {
+    -webkit-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+@media (min-width: 200px) and (min-height: 650px) {
+  .vertical {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+@media (min-width: 225px) and (min-height: 650px) {
+  .vertical {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@media (min-width: 250px) and (min-height: 650px) {
+  .icon__signature_4 {
+    top: 75%;
+  }
+}
+
+@media (min-width: 300px) and (min-height: 650px) {
+  .icon__signature_4 {
+    top: 80%;
+  }
+}

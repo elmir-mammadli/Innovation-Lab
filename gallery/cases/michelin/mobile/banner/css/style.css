@@ -1,0 +1,162 @@
+ @font-face {
+   font-family: 'Michelin';
+   src: local('Michelin Regular'),
+   url('../assets/fonts/Michelin-Regular.ttf') format('truetype');
+   font-weight: normal;
+}
+@font-face {
+   font-family: 'Michelin';
+   src: local('Michelin SemiBold'),
+   url('../assets/fonts/Michelin-SemiBold.ttf') format('truetype');
+   font-weight: 500;
+}
+@font-face {
+   font-family: 'Michelin';
+   src: local('Michelin Bold'),
+   url('../assets/fonts/Michelin-Bold.ttf') format('truetype');
+   font-weight: bold;
+}
+body {
+   margin: 0;
+   font-family: 'Michelin',serif;
+   font-weight: bold;
+   -webkit-tap-highlight-color: transparent;
+}
+.wrapper {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ overflow: hidden;
+}
+/* --------------------------------------------- */
+#body_main {
+   background: #f5f9fc;
+}
+.wm_main {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.wm_main-top {
+   width: 100%;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+}
+.wm_main-middle {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
+}
+.wm_main-title {
+   text-align: center;
+   padding: 10px;
+   font-size: 7vw;
+   text-transform: uppercase;
+   color: #004f9f;
+   margin: auto;
+}
+.wm_main-btn {
+  margin: auto;
+  font-family: 'Michelin',serif;
+  display: block;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #ffe500;
+  text-decoration: none;
+  text-align: center;
+  color: #004f9f;
+  font-size: 14px;
+}
+.wm_main-img {
+   margin-top: auto;
+   width: 100%;
+}
+.wm_main-bg {
+   display: block;
+   height: auto;
+   width: 100%;
+}
+.wm_main-model {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   font-size: 4.5vw;
+}
+.wm_model-title {
+   font-weight: normal;
+}
+.wm_model-item {
+   font-weight: 500;
+   text-align: right;
+   color: #004f9f;
+}
+.wm_model-name {
+   display: flex;
+}
+.wm_model-name u {
+   font-size: 3vw;
+   text-decoration: none;
+   margin-left: 5px;
+}
+.wm_model-item .snos {
+   text-decoration: none;
+   font-size: 3vw;
+}
+.wm_main-logo {
+   width: 50%;
+}
+/* Bottom */
+.bottom {
+   width: 100%;
+   height: 100%;
+   background-color: #01509f;
+   display: flex;
+}
+.bottom-item {
+   flex-grow: 1;
+   flex-basis: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding: 0 3%;
+}
+.bottom-title {
+ color: #fff;
+ font-size: 5vw;
+}
+.bottom-model {
+   color: #fff;
+   font-size: 4vw;
+}
+.bottom-model-title {
+   display: block;
+   font-weight: normal;
+}
+.bottom-model-name {
+   font-weight: 500;
+   display: flex;
+}
+.bottom-model-name u {
+  text-decoration: none;
+  font-size: 2vw;
+  margin-left: 3px;
+}
+.bottom-btn {
+ display: block;
+ padding: 2vw 4vw;
+ border-radius: 1vw;
+ background-color: #ffe500;
+ text-decoration: none;
+ text-align: center;
+ color: #004f9f;
+ font-size: 3vw;
+}
+.bottom-logo {
+   width: 90%;
+}

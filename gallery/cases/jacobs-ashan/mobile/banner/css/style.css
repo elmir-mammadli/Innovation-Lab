@@ -1,0 +1,190 @@
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+/* --------------------------------------------- */
+.top-smoker {
+  width: 8%;
+  z-index: 2;
+  position: absolute;
+  bottom: 14vw;
+  right: 14.5%;
+  margin-left: -12.5%;
+  opacity: 0;
+  transform: scale(0.7) perspective(100px) rotateY(90deg) skewY(-45deg) translateY(50%);
+  transform-origin: 50% 100%;
+  animation: smoke 2.4s ease 1s forwards;
+}
+@keyframes smoke {
+  80% {
+    transform: scale(1.0) rotateY(0deg) translateY(0) skewX(0deg) skewY(0deg);
+  }
+  100% {
+    transform: scale(1.0) rotateY(0deg) translateY(0) skewX(0deg) skewY(0deg);
+    opacity: 1;
+  }
+}
+/* Top */
+.stars-fon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/stars.png);
+  background-size: cover;
+  z-index: 2;
+}
+.top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background: #103e15;
+  position: relative;
+}
+.top-left-img {
+  width: 35%;
+  position: absolute;
+  left: 0;
+  bottom: 3%;
+  z-index: 10;
+}
+.top-center {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column; 
+  z-index: 1;
+  z-index: 20;
+}
+.top-title {
+  width: 80%;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3vw;
+  transform: translateY(-20px);
+  opacity: 0;
+  animation: fade 1s ease 1s forwards;
+}
+.top-btn {
+  width: 50%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fade 1.5s ease 1.5s forwards;
+}
+.top-right-img  {
+  width: 37%;
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  bottom: 4%;
+}
+.blur-left {
+  position: absolute;
+  width: 40%;
+  left: 0;
+  bottom: 0;
+}
+.blur-right {
+  position: absolute;
+  width: 40%;
+  right: 1%;
+  bottom: 0;
+  transform: scale(-1, 1);
+}
+@keyframes fade {
+  100% {
+    opacity: 1;
+    transform: translate(0,0) scale(1);
+  }
+}
+/* Main */
+.stars-mob {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../assets/stars-mob.png);
+  background-size: cover;
+  z-index: 2;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #103e15;
+  position: relative;
+}
+.main-top {
+  width: 100%;
+  height: 17%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 10;
+}
+.main-jac {
+  margin-top: auto;
+  width: 30%;
+  z-index: 10;
+  margin-right: 4%;
+}
+.main-logo {
+  margin-top: auto;
+  width: 23%;
+  margin-right: auto;
+  z-index: 10;
+}
+.main-center {
+  width: 100%;
+  height: 51%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+.main-title {
+  width: 90%;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10vw;
+}
+.main-btn {
+  width: 50%;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-el {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 15%;
+  z-index: 2;
+}
+.blur-top {
+  top: 0;
+  width: 150%;
+  left: 0;
+  transform: scale(1, -1);
+  z-index: 1;
+  position: absolute;
+}
+.blur-bottom {
+  bottom: 0;
+  width: 120%;
+  right: 0;
+  z-index: 1;
+  transform: scale(-1, 1);
+  position: absolute;
+}

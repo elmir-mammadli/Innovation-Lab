@@ -1,0 +1,293 @@
+ @font-face {
+   font-family: 'Michelin';
+   src: local('Michelin Regular'),
+   url('../assets/fonts/Michelin-Regular.ttf') format('truetype');
+   font-weight: normal;
+ }
+ @font-face {
+   font-family: 'Michelin';
+   src: local('Michelin SemiBold'),
+   url('../assets/fonts/Michelin-SemiBold.ttf') format('truetype');
+   font-weight: 500;
+ }
+ @font-face {
+   font-family: 'Michelin';
+   src: local('Michelin Bold'),
+   url('../assets/fonts/Michelin-Bold.ttf') format('truetype');
+   font-weight: bold;
+ }
+ body {
+  margin: 0;
+  font-family: 'Michelin',serif;
+  font-weight: bold;
+}
+#body_left, #body_right, #body_back{
+  background:#f5f9fc;
+}
+.wl_top {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex: 0 0 1;
+  background:#f5f9fc;
+  background-size: cover;
+}
+.wl_top-left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.wl_top-left>div {
+  flex-grow: 1;
+}
+.wl_top-left,.wl_top-right {
+  padding: 10px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.wl_title-box {
+  display: flex;
+  align-items: center;
+}
+.wl_title {
+  font-size: 3vmax;
+  text-transform: uppercase;
+  color: #004f9f;
+  opacity: 0;
+  transform: translateX(50%);
+  animation: wl_title 1s ease 2s forwards;
+}
+@keyframes wl_title {
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.wl_car-box {
+  position: relative;
+  overflow: hidden;
+}
+.wl_track-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  animation: wl_track-box 2s 2s ease-in-out forwards;
+}
+@keyframes wl_track-box {
+  10% {
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}
+.wl_img-track {
+  display: block;
+  height: 95%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wl_img-car {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: auto;
+  animation: anim_car 2s 2s ease-in-out forwards;
+}
+@keyframes anim_car {
+  100% {
+   right: 0;
+ }
+}
+.wl_top-right {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+}
+.wl_top-info {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.wl_img-logo {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: logo 1s ease 4s forwards;
+}
+@keyframes logo {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.wl_top-tires-img {
+  height: 80%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  opacity: 0;
+  animation: tires 1s ease 5s forwards;
+}
+@keyframes tires {
+  100% {
+    opacity: 1;
+  }
+}
+.wl_btn {
+  margin: auto;
+  font-family: 'Michelin',serif;
+  display: block;
+  padding: 3vh 4vh;
+  border-radius: 0.5vw;
+  background-color: #ffe500;
+  text-decoration: none;
+  text-align: center;
+  color: #004f9f;
+  font-size: 1.5vw;
+}
+.wl_btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -0.2vw;
+  border-radius: 0.5vw;
+  border-bottom: 0.4vw solid #e2a001;
+}
+.wl_btn:active {
+  transform: translateY(0.4vw) !important;
+}
+.wl_btn:active:before {
+  border: none;
+}
+.wl_top-right .wl_btn {
+  transform: translateY(100%);
+  opacity: 0;
+  animation: wl_btn 1s ease 4s forwards;
+}
+@keyframes wl_btn {
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Left & Right Sides */
+.side {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.side-title {
+  font-size: 8vw;
+  text-transform: uppercase;
+  margin-bottom: 5vh;
+  color: #004f9f;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: fade 1s ease-in-out forwards;
+}
+.title-1 {
+  animation-delay: 1.5s;
+}
+.title-2 {
+  animation-delay: 1s;
+}
+.side-image {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  opacity: 0;
+  transform: translateY(50%);
+  animation: fade 1s ease-in-out forwards;
+}
+.side-box {
+  width: 100%;
+  padding: 5%;
+  background-color: #004f9f;
+}
+.side-logo {
+  width: 100%;
+  display: flex;
+  padding: 10% 5%;
+}
+.side-logo--image {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade 1s ease-in-out 2s forwards;
+}
+.side-names {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  font-weight: 500;
+  color: #fff;
+  font-size: 6vw;
+  margin-top: 5vh;
+}
+.side-model {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+  width: 70%;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fade 1s ease-in-out forwards;
+}
+.model-1 {
+  animation-delay: 1s;
+}
+.model-2 {
+  animation-delay: 1.5s;
+}
+.side-model span {
+  text-align: right;
+  font-weight: normal;
+}
+.side-model-span {
+  display: flex;
+  justify-content: flex-end;
+}
+.side-model-small {
+  font-size: 3vw;
+  margin-top: 10px;
+}
+.side-model u {
+  text-decoration: none;
+  font-size: 5vw;
+  margin-left: 5px;
+}
+.side-garant--image {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+
+@keyframes fade {
+  100% {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+}
+.preload * {
+  transition: none !important;
+}

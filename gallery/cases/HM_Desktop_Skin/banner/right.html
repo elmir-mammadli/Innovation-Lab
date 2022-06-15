@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="//cdn.justpremium.com/Justpremium/boilerplate/css/premium_2.0.css">
+    <link rel="stylesheet" href="css/style.css?v=r">
+</head>
+
+<body id="body_right" class="body_side">
+    <!-- START OF CUSTOM HTML -->
+    <div class="jp-template-wrapper">
+      <div class="hm hm__side hm__right">
+          <h1 class="jp-template-h1 jp-template-entrance-animation">Платье<br>100% хлопок<br><span>699 Руб.</span></h1>
+      </div>
+      <!-- Image and switched video -->
+      <div class="jp-template-section hm__bottom">
+      <div class="jp-template-block">
+        <div class="jp-template-image hm__bottom--eco">
+          <img src="assets/Fiksiki.svg" alt="">
+          <p>Экологичная коллекция</p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END OF CUSTOM HTML -->
+    <script src="js/main.js"></script>
+    <script src="//cdn.justpremium.com/Justpremium/boilerplate/js/jp-controls_0.6.0.js"></script>
+    <script src="js/top-expand.js"></script>
+    <script src="//cdn.justpremium.com/Justpremium/boilerplate/lib/gsap_3.0.1.js"></script>
+    <!--<script src="js/jp-carousel_0.1.7.js"></script>-->
+    <script>Premium.template = Premium.template || {}, Premium.template.getEntranceAnimations = function (e, t) { var a = document.querySelectorAll(".jpt-entrance-animation"), o = { opacity: 0 }, c = .5, i = a.length; switch (Premium.product.id()) { case "wp": switch (document.body.id) { case "body_top": o.y = -40, c = 1; break; case "body_left": o.x = -100; break; case "body_right": o.x = 100 }break; case "cf": case "ca": o.y = 40; break; case "is": case "mt": switch (o = { opacity: 0, y: 100 }, document.body.id) { case "body_top": case "body_bottom": o.y = 0, o.x = -50, c = 1.5 } }c = void 0 === e ? c : e; for (var r = gsap.timeline({ paused: !0, defaults: { ease: "back.out" }, onComplete: t }), m = 0; m < a.length; m++) { var s = a[m].getAttribute("data-jp-template") ? JSON.parse(a[m].getAttribute("data-jp-template")) : o; r.set(a[m], s) } return r.to(a, { delay: c, duration: .6, stagger: .6 / i, opacity: 1, x: 0, y: 0 }), r }</script>
+    <script>Premium.template = Premium.template || {}, Premium.template.initButtonEffects = function (e, t, r) { e = e || 2, t = t || "assets/"; function o() { return a / .5 + 1 } for (var a = r = r || 180, n = setInterval(function () { --a <= 0 && clearInterval(n) }, 1e3), s = document.querySelectorAll("*[class*='jpt-hovereffect-']"), i = 0; i < s.length; i++) { var c = -1 < s[i].className.indexOf("jpt-hovereffect-scale"), u = -1 < s[i].className.indexOf("jpt-hovereffect-arrow"), f = -1 < s[i].className.indexOf("jpt-hovereffect-bg"), l = -1 < s[i].className.indexOf("jpt-animateeffect"); if (s[i].style.pointerEvents = "none", u) { var p = document.createElement("IMG"); if (p.className = "jpt-cta-arrow", p.src = t + "cta-arrow.png", s[i].appendChild(p), gsap.set(s[i].querySelector(".jpt-cta-arrow"), { xPercent: 0, force3D: !1 }), l) { var v = { xPercent: 40, force3D: !1, overwrite: !0, duration: .5, yoyo: !0, repeat: o() }; setTimeout(function (e) { gsap.to(s[e].querySelector(".jpt-cta-arrow"), v) }, 1e3 * e, i) } s[i].addEventListener("mouseenter", function () { gsap.to(this.querySelector(".jpt-cta-arrow"), { xPercent: 50, overwrite: !0, force3D: !1, duration: .3 }) }), s[i].addEventListener("mouseleave", function () { gsap.to(this.querySelector(".jpt-cta-arrow"), { xPercent: 0, force3D: !1, overwrite: !0, duration: .3, onComplete: function () { v && (v.repeat = o(), 1 < v.repeat && gsap.to(this._targets, v)) } }) }) } else if (c) { if (gsap.set(s[i], { scale: 1.0001, rotation: .001, force3D: !1 }), l) { var m = { scale: 1.06, rotation: .001, duration: .5, force3D: !1, yoyo: !0, repeat: o() }; setTimeout(function (e) { gsap.to(s[e], m) }, 1e3 * e, i) } s[i].addEventListener("mouseenter", function () { gsap.to(this, { scale: 1.08, rotation: .001, duration: .3, overwrite: !0, force3D: !1 }) }), s[i].addEventListener("mouseleave", function () { gsap.to(this, { scale: 1.0001, duration: .3, rotation: .001, force3D: !1, onComplete: function () { m && (m.repeat = o(), 1 < m.repeat && gsap.to(this._targets, m)) } }) }) } else f && (s[i].addEventListener("mouseenter", function () { var e = this.querySelector("SPAN"), t = this.querySelector("IMG:nth-of-type(2)"); e ? this.classList.add("hover") : gsap.to(t, { duration: .3, opacity: 1 }) }), s[i].addEventListener("mouseleave", function () { var e = this.querySelector("SPAN"), t = this.querySelector("IMG:nth-of-type(2)"); e ? this.classList.remove("hover") : gsap.to(t, { duration: .3, opacity: 0 }) })) } setTimeout(function () { for (var e = 0; e < s.length; e++)s[e].style.pointerEvents = "" }, 1e3 * e) }</script>
+    <script src="//cdn.justpremium.com/Justpremium/boilerplate/js/premium_2.4.0.js"></script>
+</body>
+
+</html>

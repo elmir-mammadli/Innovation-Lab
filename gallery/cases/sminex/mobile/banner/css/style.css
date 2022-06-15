@@ -1,0 +1,172 @@
+/* ------------------------------------------------
+LEAVE IN PLACE --------------------------------- */
+@font-face {
+ font-family: 'TT Norms';
+ src: local('TT Norms Regular'), local('TT-Norms-Regular'),
+ url('../assets/fonts/TTNorms-Regular.woff2') format('woff2'),
+ url('../assets/fonts/TTNorms-Regular.woff') format('woff'),
+ url('../assets/fonts/TTNorms-Regular.ttf') format('truetype');
+ font-weight: 400;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'TT Norms';
+ src: local('TT Norms Medium'), local('TT-Norms-Medium'),
+ url('../assets/fonts/TTNorms-Medium.woff2') format('woff2'),
+ url('../assets/fonts/TTNorms-Medium.woff') format('woff'),
+ url('../assets/fonts/TTNorms-Medium.ttf') format('truetype');
+ font-weight: 500;
+ font-style: normal;
+}
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+/* --------------------------------------------- */
+.main {
+ width: 100%;
+ height: 100%;
+ display: flex;
+ flex-direction: column;
+ position: relative;
+}
+.main-item {
+ width: 100%;
+ height: 50%;
+}
+.main-middle {
+ z-index: 2;
+}
+.main-fon {
+ width: 100%;
+ display: block;
+ margin-bottom: -2px;
+ line-height: 1;
+}
+.main-banner {
+ z-index: 2;
+ position: relative;
+ width: 100%;
+ height: 100%;
+ background-color: #0e3267;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.main-text {
+ font-size: 7vw;
+ line-height: 1.5;
+ color: #fff;
+ text-align: center;
+ font-weight: 400;
+ transition: .5s;
+}
+.main-logo {
+ width: 70%;
+ display: block;
+ margin-top: auto;
+ margin-bottom: auto;
+}
+.btn {
+ background-color: #fff;
+ color: #0e3267;
+ text-transform: uppercase;
+ text-align: center;
+ font-size: 6vw;
+ width: 70%;
+ line-height: 2;
+ margin-top: auto;
+ margin-bottom: auto;
+}
+.main-disc {
+ color: rgba(255,255,255,0.65);
+ font-size: 11px;
+ line-height: 1.2;
+ width: 80%;
+ padding-bottom: 10px;
+ text-align: center;
+}
+.main-bg {
+ width: 100%;
+ height: 55%;
+ position: absolute;
+ top: 0;
+ background-size: cover;
+ background-position: top center;
+ z-index: 0;
+ background-image: url(../assets/bg.jpg);
+}
+/* Bottom */
+.bottom {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   display:-webkit-flex;
+   position: relative;
+}
+.bottom-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-image: url(../assets/bottom.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.btm-item {
+    width:115px;
+    z-index: 2;
+    display: flex;
+    background: rgb(24,13,14);
+    background: -moz-linear-gradient(126deg, rgba(24,13,14,1) 0%, rgba(24,13,14,0) 37%, rgba(24,13,14,0) 100%);
+    background: -webkit-linear-gradient(126deg, rgba(24,13,14,1) 0%, rgba(24,13,14,0) 37%, rgba(24,13,14,0) 100%);
+    background: linear-gradient(126deg, rgba(24,13,14,1) 0%, rgba(24,13,14,0) 37%, rgba(24,13,14,0) 100%);
+}
+.btm-fon {
+   height: 100%;
+   display: block;
+   margin-right: -2px;
+}
+.btm-banner {
+    z-index:5;
+    height: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0e3267;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+.bottom .main-text {
+   font-size: 2.5vw;
+}
+.bottom-logo {
+   height: 30%;
+   width: auto;
+}
+.bottom .btn {
+   font-size: 2.5vw;
+   width: auto;
+   padding: 0 4vw;
+   margin: 0 auto;
+   font-weight: 500;
+}
+.btm-middle {
+    z-index:5;
+    margin-left:auto;
+    display:flex;
+    justify-content:flex-end;
+}
+.btm-logo2 {
+    width:20vw;
+    margin-bottom: auto;
+}

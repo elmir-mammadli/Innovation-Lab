@@ -1,0 +1,144 @@
+/* ------------------------------------------------
+LEAVE IN PLACE --------------------------------- */
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+/* --------------------------------------------- */
+@font-face {
+  font-family: 'volvo';
+  src: url("../assets/fonts/Volvo-Novum-Light.ttf");  
+  font-weight: 300;
+  font-style: normal;
+} 
+@font-face {
+  font-family: "volvo";
+  src: url("../assets/fonts/Volvo-Novum-Regular.ttf");  
+  font-weight: normal;
+  font-style: normal;
+} 
+@font-face {
+  font-family: "volvo";
+  src: url("../assets/fonts/Volvo-Novum-Medium.ttf");  
+  font-weight: 500;
+  font-style: normal;
+} 
+body {
+  font-family: "volvo";
+}
+b {
+  font-weight: 600;
+}
+.main-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/main-bg2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.main-top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-logo {
+  margin: auto;
+  display: flex;
+  width: 40%;
+}
+.main-promo {
+  font-size: 7vw;
+  margin-top: auto;
+  text-align: center;
+  color: #fff
+}
+.main-about {
+  font-size: 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 15%;
+  border: 0.05rem solid #fff;
+  border-radius: 5px;
+} 
+.ps {
+  right: 0;
+  bottom: 0;
+  margin-bottom: 5vw;
+  margin-right: 43vw;
+  font-size: 3vw;
+  color: #fff;
+  font-weight: 300;
+  position: absolute;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/bottom-bg2.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  display: flex;
+  flex-direction: row;
+}
+.bottom-logo {
+  margin-top: 4vw;
+  margin-left: 2vw;
+  position: absolute;
+  width: 17%;
+}
+.bottom-right {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+.bottom-promo {
+  text-align: center;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 6vw;
+  font-weight: 400;
+  color: #fff;
+  font-size: 2.5vw;
+}
+.about {
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  margin-top: 3vw;
+  width: 55%;
+  height: 12%;
+  border: 0.05rem solid #fff;
+  border-radius: 1.5px;
+}
+.ps2 {
+    color:#fff;
+    font-size: 2vw;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:auto;
+    margin-bottom:1.5vw;
+}

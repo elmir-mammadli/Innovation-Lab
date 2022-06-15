@@ -1,0 +1,125 @@
+/* ------------------------------------------------
+LEAVE IN PLACE --------------------------------- */
+body {
+	-webkit-tap-highlight-color: transparent;
+}
+
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+/* --------------------------------------------- */
+@font-face{
+	font-family: "boschsans";
+	src: url(../assets/fonts/BoschSans-Regular.otf);
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face{
+	font-family: "boschsans";
+	src: url(../assets/fonts/BoschSans-Bold.otf);
+	font-style: normal;
+	font-weight: bold;
+}
+@font-face{
+	font-family: "boschsans";
+	src: url(../assets/fonts/BoschSans-Light.otf);
+	font-style: normal;
+	font-weight: light;
+}
+b {
+	font-weight: bold;
+}
+.main {
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/right-bg.jpg);
+	background-size: cover;
+	background-position: bottom center;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+.fon {
+	width: 100%;
+	height: 4vh;
+	background-color: #fff;
+}
+.logo {
+	width: 60%;
+	position: absolute;
+	margin-left: 5vw;
+	top: 0;
+}
+.promo {
+	color: #000;
+	margin-top: 40vw;
+	font-size: 10vw;
+	margin-left: 5vw;
+	line-height: 1.1;
+}
+.buy {
+	background-color: #23558d;
+	width: 50%;
+	height: 17vw;
+	font-weight: 300;
+	font-size: 8vw;
+	color: #fff;
+	margin-top: 11vw;
+	margin-bottom: auto;
+	margin-left:5vw;
+	text-align: center;
+	padding: 4vw 1vw;
+}
+.ps {
+	position: absolute;
+	right: 2%;
+	font-size: 4vw;
+	bottom: 0
+}
+.bottom-bg {
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/bottom-bg.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: row;
+}
+.left {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.bottom-logo {
+	position: absolute;
+	width: 13%;
+	margin-left: 2vw;
+}
+.bottom-promo {
+	margin-left: 2vw;
+	margin-top: auto;
+	margin-bottom:5vw;
+	font-size: 3vw ;
+	font-family: "BoschSans";
+
+}
+.chicken {
+    margin-top:auto;
+	height: 110%;
+}
+.bottom-buy {
+ font-weight:300;
+ background-color: #23558d;
+ width: 25%;
+ height: 7vw;
+ font-size: 4vw;
+ color: #fff;
+ margin: auto;
+ text-align: center;
+ padding: 1.5vw 1vw;
+}

@@ -1,0 +1,9 @@
+width=1920
+height=1200
+landingpage=https://www.s7.ru/
+buyer="Innovation Lab"
+advertiser="S7 Airlines"
+tier1="Travels"
+tier2=""
+country=Russia
+dsp=

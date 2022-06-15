@@ -1,0 +1,141 @@
+@font-face {
+	font-family: 'SST-Bold';
+	src: url('../assets/fonts/SST-Bold.otf') format("opentype");
+	font-style: normal;
+}
+.bg {
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/fon.jpg);
+	background-size: cover;
+}
+.header {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-image: url(../assets/ps.png);
+	background-size: cover;
+}
+.top-text	{
+	font-size: 4.5vw;
+	margin: auto;
+	text-shadow: 0 0 10px rgba(0,0,0,0.2);
+	animation: text .8s 1s forwards;
+	opacity: 0;
+	font-family: 'SST-Bold', sans-serif;
+	color: #fff;
+	text-align: center;
+}
+@keyframes text {
+	0% {
+		transform: translateY(50%) scale(0);
+		opacity: 0.0;       
+	}
+	100% {
+		transform: translateY(0) scale(1);  
+		opacity: 1;
+	}   
+}
+.top-btn {
+	width: 17%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2vw;
+	box-shadow: 0 0 1px  #000;
+	animation: btn .8s 1.5s forwards;
+	transform: translateY(200%);
+	z-index: -1;
+}
+@keyframes btn {
+	100% {
+		transform: translateY(0);  
+		opacity: 1;
+	}   
+}
+.side {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.side-top {
+	max-width: 70%;
+	margin: auto;
+	max-height: 25%;
+	opacity: 0;
+	animation: top .8s 2.5s forwards;
+	transform: translateY(-50%);
+}
+@keyframes top {
+	100% {
+		transform: translateY(0);  
+		opacity: 1;
+	}   
+}
+.side-center {
+	max-width: 100%;
+	margin: auto;
+	max-height: 25%;
+	opacity: 0;
+	transform: perspective(600px) rotateY(-70deg) translateX(-20%);
+	animation: car 1s ease 1s forwards;
+}
+@keyframes car {
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+.side-center-right {
+	max-width: 100%;
+	margin: auto;
+	max-height: 25%;
+	opacity: 0;
+	transform: perspective(600px) rotateY(70deg) translateX(20%);
+	animation: car-r 1s ease 1s forwards;
+}
+@keyframes car-r {
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+.side-bottom {
+	max-width: 100%;
+	max-height: 40%;
+	object-fit: contain;
+}
+.side-btn {
+	position: absolute;
+	width: 100%;
+	max-width: 100%;
+	height:20%;
+	display: flex;
+	bottom: 0;
+	object-fit: contain;
+}
+.btn {
+	max-width: 55%;
+	box-shadow: 0 0 15px  #000;
+	max-height: 35%;
+	margin-top: auto;
+	margin-bottom: 10vw;
+	object-fit: contain;
+	margin-left: auto;
+	margin-right: auto;
+	animation: btn .8s 2.5s forwards;
+	transform: translateY(200%);
+}
+@media (max-width: 120px) {
+	.side {
+		opacity: 0;
+	}
+}

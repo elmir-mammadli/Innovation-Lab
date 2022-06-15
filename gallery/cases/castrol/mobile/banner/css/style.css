@@ -1,0 +1,215 @@
+/* ------------------------------------------------
+ LEAVE IN PLACE --------------------------------- */
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+/* --------------------------------------------- */
+@font-face {
+	font-family: "Castrol";
+	src: url("../assets/fonts/Castrol2.woff") format("woff");
+	font-style: normal;
+}
+/* Side */
+.side {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	background-image: url(../assets/background.jpg);
+	background-size: cover;
+	justify-content: space-between;
+	z-index: 999;
+}
+.side-top {
+	width: 100%;
+	max-width: 100%;
+	object-fit: contain;
+	display: flex;
+	flex-direction: column;
+	height: 30%;
+}
+.side-logo {
+	max-width: 100%;
+	height: 60%;
+	object-fit: contain;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+}
+.src {
+	font-family: 'Castrol', sans-serif;
+	font-size: 7vw;
+	color: #fff;
+		letter-spacing: -.1px;
+	text-transform: uppercase;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.side-center {
+	width: 100%;
+	max-width: 100%;
+	object-fit: contain;
+	height: 60%;
+	display: flex;
+	justify-content: flex-end;
+}
+.center-img {
+	max-width: 90%;
+	object-fit: contain;
+	height: 90%;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.side-bottom {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 10%;
+}
+.btn	{
+  width: 60%;
+	height: 13vw;
+	color: #98fff0;
+	outline: none;
+	border: 2px solid #98fff0;
+	background: none;
+	font-family: 'Castrol', sans-serif;
+	padding: 2.5vw 1vw;
+	font-size: 6.5vw;
+	letter-spacing: 0.2px;
+	text-align: center;
+	padding-left: 12vw;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: row;
+}
+.sim	{
+	font-size: 5vw;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: auto;
+	margin-left: 5vw;
+}
+.dkl	{
+	display: flex;
+	width: 100%;
+	height: 15%;
+	align-items: center;
+}
+.diskleimer {
+	font-family: 'Castrol', sans-serif;
+	font-size: 3vw;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: auto;
+	line-height: normal;
+	margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pulse{
+  animation: heart-pulse 1s  2s infinite ease-out;
+}
+@keyframes heart-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Footer */
+.footer {
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/background.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: row;
+
+}
+.left-footer {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.footer-logo {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+}
+.footer-src {
+	font-family: 'Castrol', sans-serif;
+	font-size: 3vw;
+	color: #fff;
+		letter-spacing: -.1px;
+	text-transform: uppercase;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+.right-footer {
+	display: flex;
+	width: 50%;
+	height: 100%;
+	flex-direction: column;
+}
+.footer-btn	{
+	height: 8vw;
+	color: #98fff0;
+	outline: none;
+	border: 2px solid #98fff0;
+	background: none;
+	font-family: 'Castrol', sans-serif;
+	padding: 1vw 1vw;
+	font-size: 4vw;
+	letter-spacing: 0.2px;
+	text-align: center;
+	padding-left: 4vw;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+.footer-sim	{
+	font-size: 2vw;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 2vw;
+	margin-left: 2vw;
+}
+.text {
+	font-family: 'Castrol', sans-serif;
+	font-size: 4.5vw;
+	color: #fff;
+	letter-spacing: -.1px;
+	text-transform: uppercase;
+	margin-bottom: 1vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+}
+.text2 {
+	font-family: 'Castrol', sans-serif;
+	font-size: 4.5vw;
+	color: #fff;
+	letter-spacing: -.1px;
+	text-transform: uppercase;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}

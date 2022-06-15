@@ -1,0 +1,428 @@
+@font-face {
+  font-family: "Pandora";
+  src: url('../assets/mplus-1p-regular.woff2');
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Pandora";
+  src: url('../assets/mplus-1p-medium.woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: "PanDisplay";
+  src: url('../assets/PanDisplayBold.ttf');
+  font-weight: bold;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  background: rgb(241,176,184);
+  background: linear-gradient(320deg, rgba(241,176,184,1) 0%, rgba(240,178,177,1) 20%, rgba(250,216,233,1) 40%, rgba(240,178,177,1) 60%, rgba(250,216,233,1) 80%, rgba(241,176,184,1) 100%);
+}
+/* Top */
+.top {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+.top-banner {
+  width: 55.55%;
+  height: 100%;
+  display: flex;
+  background-image: url('../assets/top-bg.png');
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.top-video-box {
+  width: 44.45%;
+  height: 100%;
+}
+.top-banner--item {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+.top--logo {
+  margin-left: 10%;
+  width: 80%;
+  opacity: 0;
+}
+.top--product2 {
+  margin-left: 10%;
+  width: 80%;
+  opacity: 0;
+  transform: translateX(-20px);
+}
+.top-banner--item:nth-child(2) {
+  align-items: center;
+}
+.top--product1 {
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  opacity: 0;
+  transform: translateX(20px);
+}
+.top-cta {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.top-cta--text {
+  font-family: "Pandora";
+  display: inline-block;
+  font-weight: 500;
+  font-size: 2vw;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.top-cta--sale {
+  font-family: "PanDisplay";
+  font-weight: bold;
+  font-size: 6vw;
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.top-cta--sale::before {
+  content: '*';
+  position: absolute;
+  right: -1vw;
+  top: 1vw;
+  font-size: 2vw;
+}
+.top-cta--btn {
+  background-color: #000;
+  color: #fff;
+  font-family: "Pandora";
+  font-weight: normal;
+  padding: 1vw 2vw;
+  display: inline-block;
+  font-size: 0.8vw;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.vise .top--logo {
+  animation: fade 2s ease 0s forwards;
+}
+.vise .top--product2 {
+  animation: fade 2s ease 1s forwards;
+}
+.vise .top--product1 {
+  animation: fade 2s ease 1s forwards;
+}
+.vise .top-cta--text {
+  animation: fade 1s ease 2s forwards;
+}
+.vise .top-cta--sale {
+  animation: fade 1s ease 3s forwards;
+}
+.vise .top-cta--btn {
+  animation: fade 1s ease 4s forwards;
+}
+/* Side */
+.side {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.side-start {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  display: flex;
+}
+.side-start--text {
+  margin: auto;
+  font-family: "Pandora";
+  font-weight: 500;
+  text-align: center;
+  font-size: 8vw;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: fadeStart 4s ease-in-out 0.5s forwards;
+}
+.top .side-start--text {
+  font-size: 3.6vw;
+}
+.side-start--text b {
+  font-family: "PanDisplay";
+  text-transform: uppercase;
+}
+.side-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.snej1 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 40%;
+}
+.snej2 {
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  width: 35%;
+}
+.snej3 {
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  width: 20%;
+}
+.side-bg--blicks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.flare {
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 0 10px #fff;
+  border-radius: 100%;
+  background-color: #fff;
+  position: absolute;
+  opacity: 0;
+}
+.flare.anim {
+  animation: flare 4s ease 1s infinite;
+}
+@keyframes flare {
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -3;
+  transition: ease .3s;
+  display: flex;
+  flex-direction: column;
+}
+.overlay.active {
+  z-index: 4;
+  opacity: 1;
+}
+.side-cta {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#over2 .side-cta {
+  margin-bottom: 5vh;
+}
+.side-cta--text {
+  font-family: "Pandora";
+  display: inline-block;
+  font-weight: 500;
+  font-size: 10vw;
+  text-transform: uppercase;
+}
+.side-cta--sale {
+  font-family: "PanDisplay";
+  font-weight: bold;
+  font-size: 32vw;
+  position: relative;
+  display: inline-block;
+  line-height: 1;
+}
+.side-cta--sale::before {
+  content: '*';
+  position: absolute;
+  right: -5vw;
+  top: 5vw;
+  font-size: 8vw;
+}
+.side-cta--btn {
+  background-color: #000;
+  color: #fff;
+  font-family: "Pandora";
+  font-weight: normal;
+  padding: 0 6vw;
+  display: inline-block;
+  font-size: 3vw;
+  line-height: 4;
+  text-transform: uppercase;
+  letter-spacing: 1vw;
+  margin-top: 8vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.side--logo {
+  max-width: 100%;
+  max-height: 20%;
+}
+.side-desk {
+  margin-bottom: 2vw;
+  font-size: 3vw;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: ease 1s .3s;
+}
+.side-desk b {
+  font-weight: bold;
+}
+.side--logo2 {
+  max-width: 80%;
+  max-height: 10%;
+  margin: auto;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: ease 1s;
+}
+.side--product2 {
+  max-width: 100%;
+  max-height: 15%;
+  margin: auto;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: ease 1s;
+}
+.btn2 {
+  margin: auto;
+  margin-bottom: 5vh;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: ease 1s;
+}
+.side--product1 {
+  max-width: 70%;
+  max-height: 20%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.side-a2 {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: ease 1s;
+}
+.active .side--product2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+.active .side--logo2 {
+  opacity: 1;
+  transform: translateX(0);
+}
+.active .btn2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+.active .side-desk {
+  opacity: 1;
+  transform: translateY(0);
+}
+.active .side-a2 {
+  opacity: 1;
+  transform: translateY(0);
+}
+.side-a1 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: ease 1s;
+} 
+.side-a3 {
+  opacity: 0;
+  transform: scale(0.5);
+  transition: ease 1s;
+}
+.side-a4 {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: ease 1s;
+}
+.active .side-a1 {
+  opacity: 1;
+  transform: translateY(0);
+} 
+.active .side-a3 {
+  opacity: 1;
+  transform: scale(1);
+}
+.active .side-a4 {
+  opacity: 1;
+  transform: translateY(0);
+}
+@keyframes fade {
+  100% {
+    opacity: 1;
+    transform: translate(0,0) scale(1.0);
+  }
+}
+@keyframes fadeStart {
+  50% {
+    opacity: 1;
+    transform: translate(0,0) scale(1.0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0,0) scale(1.0);
+  }
+}
+.preload, .preload *{
+  transition: none;
+}
+.side-video {
+  width: 100%;
+  max-width: 100%;
+  max-height: 75%;
+  overflow: hidden;
+}
+@media (max-width: 120px) {
+  .side .side-start, .side .overlay {
+    display: none;
+  }
+}
+@media (max-width: 120px) {
+  .side .side-start, .side .overlay {
+    display: none;
+  }
+}
+@media (min-width: 320px) { 
+  .side-cta {
+    width: auto;
+  }
+  .side-cta--sale {
+    font-size: 100px;
+  }
+  .side-cta--text {
+    font-size: 32px;
+  }
+  .side-cta--btn {
+    font-size: 12px;
+    padding: 0 24px;
+    margin-top: 0;
+  }
+}

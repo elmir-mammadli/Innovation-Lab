@@ -1,0 +1,148 @@
+@font-face { 
+  font-family: 'LouisBold'; 
+  src: url(../fonts/LouisGlobal2-Bold.otf) format('otf');
+  font-weight: 300;
+}
+/* ------------------------------------------------
+ LEAVE IN PLACE --------------------------------- */
+ body {
+    -webkit-tap-highlight-color: transparent;
+
+}
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+/* --------------------------------------------- */
+body{
+	background:grey;
+}
+.bottom {
+	width: 100%;
+	height: 100%;
+	background-image: url(../assets/bottom-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: row;
+}
+.left {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.offroad {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.btn	{
+	font-family: 'LouisBold', sans-serif;
+	width: 70%;
+	height: 6vw;
+	color: #fff;
+	outline: none;
+	background: #DF9524;
+	padding: 1.5vw 1vw;
+	font-size: 3vw;
+	letter-spacing: 0.2px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+}
+.right	{
+	width: 60%;
+}
+/* Main */
+.main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-image: url(../assets/bg.jpg);
+	background-size: cover;
+	justify-content: space-between;
+	background-position: center;
+}
+.main-top {
+	width: 100%;
+	height: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.offroad {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.titles {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.top-title1 {
+   font-family: 'LouisBold', sans-serif;
+   letter-spacing: 1px;
+   font-stretch: condensed;
+   font-weight: 600;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 6vw;
+   color: #fff;
+}
+.top-title2 {
+   font-family: 'LouisBold', sans-serif;
+   letter-spacing: 2px;
+   font-stretch: condensed;
+   font-weight: 600;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 10.5vw;
+   color: #B5862C;
+}
+.top-title3 {
+   font-family: 'LouisBold', sans-serif;
+   letter-spacing: 2px;
+   font-stretch: condensed;
+   font-size: 9.5vw;
+   font-weight: 600;
+   margin-left: auto;
+   margin-right: auto;
+   color: #B5862C;
+}
+.main-bottom {
+	width: 100%;
+	height: 35%;
+	display: flex;
+	flex-direction: column;
+}
+.bottom-logo {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+}
+.main-btn	{
+	font-family: 'LouisBold', sans-serif;
+	width: 70%;
+	height: 12vw;
+	color: #fff;
+	outline: none;
+	background: #DF9524;
+	padding: 2.5vw 1vw;
+	font-size: 6vw;
+	letter-spacing: 0.2px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+}
